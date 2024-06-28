@@ -5,7 +5,7 @@ branch:
   main
 jobs:
     hello_youtube:
-        runs-name: ubuntu_lastest
+        runs-name: ubuntu-lastest
         steps:
           - name: echo hello youtube
           - run: |
