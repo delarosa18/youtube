@@ -1,17 +1,13 @@
-name: Say hello
-
-on:
-  push:
-    branches:
-      - main
-
+name: say hello
+run-name: yaml de youtube
+on: [push]
+branch:
+  main
 jobs:
-  hello_world:
-    runs-on: ubuntu-18.04
-    steps:
-      - name: Echo the message
-        run: |
-          echo "Hola midu!"
-      - name: Dime la fecha
-        run: date
-      - run: ls -l
+    hello_youtube:
+        runs-name: ubuntu_lastest
+        steps:
+          - name: echo hello youtube
+          - run: |
+              echo "Hello youtube, estoy aprendiendo github actions desde aca :D"
+            
