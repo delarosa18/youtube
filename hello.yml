@@ -1,0 +1,13 @@
+name: say hello
+run-name: yaml de youtube
+on: [push]
+branch:
+  main
+jobs:
+    hello_youtube:
+        runs-name: ubuntu-lastest
+        steps:
+          - name: echo hello youtube
+          - run: echo "Hello youtube, estoy aprendiendo github actions desde aca :D"
+            
+
