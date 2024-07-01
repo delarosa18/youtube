@@ -1,5 +1,4 @@
 name: say hello
-run-name: yaml de youtube
 on: 
   push:
     branchs:
