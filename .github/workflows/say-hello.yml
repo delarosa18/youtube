@@ -15,6 +15,9 @@ jobs:
       - name: echo hello youtube
         run: echo "Hello youtube, estoy aprendiendo github actions desde aca :D"
 
+      - name: Dime la fecha
+        run: date
+      - run: ls -ls
 
 
 
