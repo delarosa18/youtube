@@ -1,0 +1,22 @@
+name: Deployment Pipiline 
+
+on:
+    [push]
+        branches:
+            -main
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: El check out
+            - uses: actions/checkout@v2
+              with:
+                fetch-depth: 0
+            - uses: actions/setup-node@v4
+              with:
+                node-version: 18
+            - name: nmp install
+            - run: npm install
+            - name: Lint
+            - run: npm run eslint
