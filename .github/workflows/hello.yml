@@ -8,7 +8,6 @@ jobs:
         runs-name: ubuntu-lastest
         steps:
           - name: echo hello youtube
-          - run: |
-              echo "Hello youtube, estoy aprendiendo github actions desde aca :D"
+          - run: echo "Hello youtube, estoy aprendiendo github actions desde aca :D"
             
 
