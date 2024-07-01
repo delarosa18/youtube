@@ -1,18 +1,57 @@
 name: say hello
-on: 
+
+on:
   push:
-    branchs:
+    branches:
       - main
 
+jobs:
+  hello_youtube:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
 
-  jobs:
-    hello_youtube:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Check out repository code
-          - uses: actions/checkout@v2
+      - name: echo hello youtube
+        run: echo "Hello youtube, estoy aprendiendo github actions desde aca :D"
 
-          - name: echo hello youtube
-          - run: echo "Hello youtube, estoy aprendiendo github actions desde aca :D"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #name: say hello
+        #on: 
+        #push:
+        #branchs:
+        #- main
+
+
+        #jobs:
+        #hello_youtube:
+        #runs-on: ubuntu-latest
+        #steps:
+        # - name: Check out repository code
+        # - uses: actions/checkout@v2
+
+        # - name: echo hello youtube
+        # - run: echo "Hello youtube, estoy aprendiendo github actions desde aca :D"
             
 
