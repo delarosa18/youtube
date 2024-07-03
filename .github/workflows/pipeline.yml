@@ -19,8 +19,12 @@ jobs:
       - name: npm install
         run: npm install --no-audit --no-fund --no-optional
       - name: Lint
-        run: npm run eslint
-      - name: Build
-        run: npm run build 
+        run: npm run eslint 
       - name: Test
         run: npm test 
+      - name: E2N cypress-io/github-action@v6
+        uses: cypress-io/github-action@v6 
+        with: 
+           command: npm run test:e2e 
+           start: npm run start-test
+           wait-on: http://localhost:5000
